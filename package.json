@@ -1,0 +1,36 @@
+{
+  "name": "com.av.actions",
+  "version": "1.0.0",
+  "displayName": "AV Actions",
+  "description": "Scriptable object-based action system for defining and executing gameplay actions with runtime state management.",
+  "unity": "2021.3",
+  "keywords": [
+    "actions",
+    "scriptable-objects",
+    "gameplay",
+    "state-machine"
+  ],
+  "author": {
+    "name": "IAFahim",
+    "email": "iafahim.dev@gmail.com",
+    "url": "https://github.com/IAFahim"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "com.bovinelabs.core": "https://gitlab.com/tertle/com.bovinelabs.core.git#1.6.0"
+  },
+  "samples": [
+    {
+      "displayName": "Action System Demo",
+      "description": "Demonstration of the action system usage",
+      "path": "Samples~"
+    }
+  ],
+  "category": "Game Tools",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IAFahim/AV.Actions"
+  },
+  "licensesUrl": "https://github.com/IAFahim/AV.Actions/blob/main/LICENSE.md",
+  "_fingerprint": "95b248ca3b65905db8870c2787e2e058296027c4"
+}

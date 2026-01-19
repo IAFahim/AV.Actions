@@ -1,0 +1,20 @@
+{
+    "name": "AV.Actions.Integration",
+    "rootNamespace": "AV.Actions",
+    "references": [
+        "GUID:51933a761ac54bdf809d4232a41b244c",
+        "GUID:f8242764ccad06a4ca6d427d36be92ab",
+        "GUID:abeca9ea641a635fbb288e2b0124038d"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

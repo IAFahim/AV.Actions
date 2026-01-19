@@ -1,0 +1,21 @@
+{
+    "name": "AV.Actions.Editor",
+    "rootNamespace": "AV.Actions",
+    "references": [
+        "GUID:7856f8ff87ce4260ba3b3da0ac82f1b0",
+        "GUID:1e77403e8aa802e41a80f525abcb6a8d"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_EDITOR"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
