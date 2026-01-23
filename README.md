@@ -1,6 +1,6 @@
 # AV.Actions
 
-![Header](documentation_header.svg)
+![Header](Documentation~/documentation_header.svg)
 
 [![Unity](https://img.shields.io/badge/Unity-2022.3%2B-000000.svg?style=flat-square&logo=unity)](https://unity.com)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE.md)
@@ -41,3 +41,20 @@ public void PerformAction(ActionMonitor action)
 - 🚧 **WIP**: Foundation package.
 - 🧪 **Tests**: Missing.
 - 📘 **Samples**: Included in `Samples~`.
+
+## 🔍 Deep Dive
+
+### Key Resolution System
+How `ActionMonitor` references are resolved to runtime IDs.
+
+```mermaid
+graph TD
+    Editor -->|Configures| Settings[ActionMonitorSettings]
+    Settings -->|Generates| Keys[Byte IDs]
+    
+    Runtime -->|Reference| Monitor[ActionMonitor SO]
+    Monitor -->|Lookup| ID[Runtime ID]
+    
+    Code -->|Compare| Comparison{Monitor.ID == Action.ID}
+    Comparison -->|Result| True/False
+```
