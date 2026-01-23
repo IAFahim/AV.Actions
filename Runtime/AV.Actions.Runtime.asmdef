@@ -2,8 +2,7 @@
     "name": "AV.Actions.Runtime",
     "rootNamespace": "AV.Actions",
     "references": [
-        "GUID:f8242764ccad06a4ca6d427d36be92ab",
-        "GUID:abeca9ea641a635fbb288e2b0124038d"
+        "GUID:f8242764ccad06a4ca6d427d36be92ab"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

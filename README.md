@@ -1,62 +1,43 @@
-# AV Actions
+# AV.Actions
 
-Scriptable object-based action system for defining and executing gameplay actions with runtime state management.
+![Header](documentation_header.svg)
 
-![Unity Version](https://img.shields.io/badge/unity-2021.3%2B-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)
+[![Unity](https://img.shields.io/badge/Unity-2022.3%2B-000000.svg?style=flat-square&logo=unity)](https://unity.com)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE.md)
 
-## Features
+Type-safe action identification system using `BovineLabs.Core` keys.
 
-- **Professional Quality**: Built following Unity Package Manager best practices
-- **Well Documented**: Comprehensive documentation and examples
-- **Production Ready**: Tested and optimized for production use
+## ✨ Features
 
-## Installation
+- **Action Keys**: Define generic action identifiers (e.g., "Attack", "Jump") in a centralized settings asset.
+- **Type Safety**: Uses `ActionMonitor` scriptable objects to prevent string-based errors.
+- **Performance**: Optimized key lookup via `BovineLabs.Core`.
 
-Install this package via Unity Package Manager by adding this line to your `Packages/manifest.json`:
+## 📦 Installation
 
-```json
-"com.av.actions": "https://github.com/IAFahim/AV.Actions.git"
+Install via Unity Package Manager (git URL).
+
+### Dependencies
+- **BovineLabs.Core**: Required for `KSettingsBase` and key management.
+
+## 🚀 Usage
+
+1. Open project settings or `BovineLabs` settings window.
+2. Navigate to **Action** settings.
+3. Create new `ActionMonitor` keys.
+4. Reference `ActionMonitor` in your scripts instead of strings.
+
+```csharp
+[SerializeField] private ActionMonitor jumpAction;
+
+public void PerformAction(ActionMonitor action)
+{
+    if (action == jumpAction) { ... }
+}
 ```
 
-Or install via Git URL in Unity Package Manager:
-1. Open Unity Package Manager (Window > Package Manager)
-2. Click the + icon > Add package from git URL
-3. Enter: `https://github.com/IAFahim/AV.Actions.git`
+## ⚠️ Status
 
-## Requirements
-
-- Unity 2021.3 or higher
-- Dependencies will be automatically resolved by Unity Package Manager
-
-## Usage
-
-Add components from the `AV Actions` package to your GameObjects via the Component menu:
-`Component > AV > Actions > [Component Name]`
-
-For detailed usage instructions, see the [Samples](Samples~) included with this package.
-
-## API Documentation
-
-For complete API reference and documentation, visit: https://github.com/IAFahim/AV.Actions
-
-## Changelog
-
-See [CHANGELOG.md](CHANGELOG.md) for version history.
-
-## License
-
-MIT License - see [LICENSE.md](LICENSE.md) for details.
-
-## Author
-
-IAFahim - [https://github.com/IAFahim](https://github.com/IAFahim)
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Support
-
-For issues and questions, please use the [GitHub Issues](https://github.com/IAFahim/AV.Actions/issues) page.
+- 🚧 **WIP**: Foundation package.
+- 🧪 **Tests**: Missing.
+- 📘 **Samples**: Included in `Samples~`.

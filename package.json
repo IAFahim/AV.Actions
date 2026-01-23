@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "displayName": "AV Actions",
   "description": "Scriptable object-based action system for defining and executing gameplay actions with runtime state management.",
-  "unity": "2021.3",
+  "unity": "2022.3",
   "keywords": [
     "actions",
     "scriptable-objects",
@@ -31,6 +31,5 @@
     "type": "git",
     "url": "https://github.com/IAFahim/AV.Actions"
   },
-  "licensesUrl": "https://github.com/IAFahim/AV.Actions/blob/main/LICENSE.md",
-  "_fingerprint": "95b248ca3b65905db8870c2787e2e058296027c4"
+  "licensesUrl": "https://github.com/IAFahim/AV.Actions/blob/main/LICENSE.md"
 }
